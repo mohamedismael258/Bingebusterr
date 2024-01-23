@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/Start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:src="@drawable/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintWidth_percent="0.3" />
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="@id/Start"
+    app:layout_constraintEnd_toEndOf="@id/Start"
+    app:layout_constraintTop_toBottomOf="@id/Start"
+    android:text="Start"
+    android:textSize="@dimen/_20sdp"
+    android:gravity="center"
+    android:paddingStart="@dimen/_5sdp"
+    />
+
+    <ImageView
+        android:id="@+id/research"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:src="@drawable/research"
+        android:paddingTop="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintWidth_percent="0.3"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/research"
+        app:layout_constraintEnd_toEndOf="@id/research"
+        app:layout_constraintTop_toBottomOf="@id/research"
+        android:text="Research"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        android:paddingStart="@dimen/_5sdp"
+        />
+
+    <ImageView
+        android:id="@+id/about_us"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/about_us"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toBottomOf="@id/research"
+        app:layout_constraintVertical_bias="0.602"
+        app:layout_constraintWidth_percent="0.3" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/about_us"
+        app:layout_constraintEnd_toEndOf="@id/about_us"
+        app:layout_constraintTop_toBottomOf="@id/about_us"
+        android:text="About us"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        android:paddingStart="@dimen/_5sdp"
+        />
+
+
+    <ImageView
+        android:id="@+id/contac_us"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/contact_us"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Start"
+        app:layout_constraintVertical_bias="0.602"
+        app:layout_constraintWidth_percent="0.3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/contac_us"
+        app:layout_constraintEnd_toEndOf="@id/contac_us"
+        app:layout_constraintTop_toBottomOf="@id/contac_us"
+        android:text="Contact us"
+        android:textSize="@dimen/_20sdp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

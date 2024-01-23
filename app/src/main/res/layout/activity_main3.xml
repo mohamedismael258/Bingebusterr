@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:background="@drawable/background"
+    >
+   <ImageView
+       android:id="@+id/logo"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+      app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHeight_percent="0.3"
+       android:src="@drawable/first"
+       android:layout_marginBottom="@dimen/_15sdp"
+       />
+   <EditText
+       android:layout_marginTop="@dimen/_40sdp"
+       android:id="@+id/seriesname"
+       android:layout_width="wrap_content"
+       android:layout_height="0dp"
+       android:hint="Enter series name"
+       android:gravity="center"
+       android:background="#AFAFAF"
+       app:layout_constraintHeight_percent="0.05"
+       app:layout_constraintTop_toBottomOf="@id/logo"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:textSize="@dimen/_15sdp"
+       android:layout_marginBottom="@dimen/_20sdp"
+       android:paddingStart="@dimen/_5sdp"
+       android:paddingEnd="@dimen/_5sdp"
+       android:textColorHint="@color/black"
+       />
+   <EditText
+       android:id="@+id/numberofeposid"
+       android:layout_width="wrap_content"
+       android:layout_height="0dp"
+app:layout_constraintTop_toBottomOf="@id/seriesname"
+   app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:hint="Enter number of episode you want to watch"
+       android:gravity="center"
+       android:textSize="@dimen/_15sdp"
+       android:layout_marginBottom="@dimen/_20sdp"
+       android:paddingStart="@dimen/_5sdp"
+       android:paddingEnd="@dimen/_5sdp"
+       android:background="#AFAFAF"
+       android:layout_marginTop="@dimen/_20sdp"
+       android:textColorHint="@color/black"
+       app:layout_constraintHeight_percent="0.05"
+       />
+   <EditText
+       android:id="@+id/eposidtime"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:hint="Enter each episod time in mints separated by (-) "
+       android:gravity="center"
+       android:textSize="@dimen/_15sdp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:paddingStart="@dimen/_5sdp"
+       android:paddingEnd="@dimen/_5sdp"
+       android:background="#AFAFAF"
+       android:textColorHint="@color/black"
+       app:layout_constraintTop_toBottomOf="@id/numberofeposid"
+       android:layout_marginTop="@dimen/_20sdp"
+       app:layout_constraintHeight_percent="0.1"
+
+       />
+
+   <Button
+       android:id="@+id/btnsave"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/_20sdp"
+       android:backgroundTint="#A3A3A3"
+       android:text="Save data "
+       android:textSize="@dimen/_15sdp"
+       app:layout_constraintTop_toBottomOf="@id/eposidtime"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:textColor="@color/black"
+    />
+   <ImageView
+       android:id="@+id/start"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+      app:layout_constraintTop_toBottomOf="@id/btnsave"
+      android:src="@drawable/starttime"
+      app:layout_constraintHeight_percent="0.15"
+       app:layout_constraintStart_toStartOf="@id/btnsave"
+       app:layout_constraintEnd_toEndOf="@id/btnsave"
+       android:paddingStart="@dimen/_1sdp"
+
+       />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
